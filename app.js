@@ -12,8 +12,10 @@ let url = 'https://catfact.ninja/fact';
 //using promises
 // fetch(url).then((response) => console.log(response)).catch((error) => console.log(error));
 //using async await
+let data;
 async function getdata() {
     let respo = await fetch(url);
-    let data = await respo.json();
+    data = await respo.json();
     console.log(data.fact);
 }
+module.exports = 128;
